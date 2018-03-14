@@ -1,6 +1,6 @@
 var googleCommands = {
-    enterSearchValue: function () {
-        return this.setValue('@searchBox', 'nightwatch');
+    enterSearchValue: function (searchValue) {
+        return this.setValue('@searchBox', searchValue);
     }
 };
 
@@ -13,6 +13,12 @@ module.exports = {
         },
         body: {
             selector: 'body'
+        },
+        main: {
+            selector: '#main'
+        },
+        settingsLink: {
+            selector: 'a#abar_button_opt'
         }
     }
 };

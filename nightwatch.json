@@ -8,12 +8,12 @@
   
     "selenium" : {
       "start_process" : true,
-      "server_path" : "./drivers/selenium-server-standalone-3.5.3.jar",
+      "server_path" : "./bin/selenium-server-standalone-3.5.3.jar",
       "log_path" : "./logs",
       "port" : 4444,
       "cli_args" : {
-        "webdriver.chrome.driver" : "./drivers/chromedriver.exe",
-        "webdriver.gecko.driver" : "./drivers/geckodriver.exe",
+        "webdriver.chrome.driver" : "./bin/chromedriver.exe",
+        "webdriver.gecko.driver" : "./bin/geckodriver.exe",
         "webdriver.edge.driver" : ""
       }
     },
@@ -34,6 +34,10 @@
         }
       },
   
+      "mocha" : {
+        "test_runner" : "mocha"
+      },
+
       "chrome" : {
         "desiredCapabilities": {
           "browserName": "chrome"
