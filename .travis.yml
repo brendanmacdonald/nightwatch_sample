@@ -4,7 +4,7 @@ node_js:
   - "8.10.0"
 
 before_script:
- - sudo npm install - g nightwatch
+ - npm install - g nightwatch
 script:
   - nightwatch tests/mocha.js -e mocha
 
