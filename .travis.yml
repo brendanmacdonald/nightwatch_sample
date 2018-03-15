@@ -2,7 +2,7 @@ sudo: required
 language: node_js
 
 before_script:
- - npm install - g nightwatch
+ - sudo npm install - g nightwatch
 script:
   - nightwatch tests/mocha.js -e mocha
 
