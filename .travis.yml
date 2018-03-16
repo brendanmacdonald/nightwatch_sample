@@ -10,7 +10,7 @@ before_script:
  - wget https://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
  - sudo cp selenium-server-standalone-*.jar ./bin
  - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip
- - unzip ~/chromedriver_linux64.zip -d ./bin
+ - unzip chromedriver_linux64.zip -d ./bin
  - ls bin
  - npm install -g nightwatch
 
