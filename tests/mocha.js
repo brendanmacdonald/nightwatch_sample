@@ -3,7 +3,6 @@ describe('Google demo test for Mocha', function () {
     describe('for demo purposes', function () {
 
         before(function (client, done) {
-            client.pause(5);
             done();
         });
 

@@ -37,9 +37,11 @@
       "mocha" : {
         "test_runner" : "mocha",
         "desiredCapabilities": {
+          "javascriptEnabled": true,
+          "acceptSslCerts": true,
           "browserName": "chrome",
           "chromeOptions" : {
-            "args" : ["headless"]
+            "args" : ["headless", "no-sandbox", "disable-gpu"]
          }
         }
       },
