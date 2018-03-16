@@ -6,11 +6,10 @@ node_js:
 before_script:
  - npm install
  - wget https://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
- - sudo cp selenium-server-standalone-*.jar /bin
+ - sudo cp selenium-server-standalone-*.jar ./bin
  - pwd
  - ls
  - npm install -g nightwatch
 
 script:
   - nightwatch tests/mocha.js -e mocha
-  
