@@ -1,20 +1,6 @@
 describe('Google demo test for Mocha', function () {
 
-    describe('for demo purposes', function () {
-
-        before(function (client, done) {
-            done();
-        });
-
-        after(function (client, done) {
-            if (client.sessionId) {
-                client.end(function () {
-                    done();
-                });
-            } else {
-                done();
-            }
-        });
+    context('for demo purposes', function () {
 
         afterEach(function (client, done) {
             done();
@@ -32,8 +18,8 @@ describe('Google demo test for Mocha', function () {
             google
                 .enterSearchValue('nightwatch')
                 .sendKeys('@searchBox', browser.Keys.ENTER)
-            browser.pause(2000)
-            google.expect.element('@main').to.be.present
+            google.expect.element('@main').to.be.present.before(2000)
+            google.waitForElementPresent('@main')
             google.assert.containsText('@main', 'The Night Watch')
         });
 
