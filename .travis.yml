@@ -9,9 +9,8 @@ before_script:
  - sudo cp selenium-server-standalone-*.jar ./bin
  - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip
  - unzip chromedriver_linux64.zip -d ./bin
- - cd bin/ && ls && pwd
+ #- cd bin/ && ls && pwd
  #- npm install -g nightwatch
 
 script:
-  - 
-  - nightwatch tests/mocha.js -e mocha
+  - npm run test
