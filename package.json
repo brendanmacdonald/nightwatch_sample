@@ -1,0 +1,26 @@
+{
+  "name": "nightwatch_example",
+  "version": "1.0.0",
+  "description": "1. Clone this repo. \r 2. Download selenium server, geckodriver, and chromedriver, and add them to './bin' folder.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendanmacdonald/nightwatch_sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendanmacdonald/nightwatch_sample/issues"
+  },
+  "homepage": "https://github.com/brendanmacdonald/nightwatch_sample#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nightwatch": "^0.9.21"
+  }
+}
